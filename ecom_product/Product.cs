@@ -33,7 +33,7 @@ namespace ecom_product
         {
             this.stock = stock;
         }
-
+        //methods to increase and decrease stock
         public int StockIncrease(int value)
         {
             int st;

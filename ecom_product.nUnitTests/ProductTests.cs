@@ -2,17 +2,20 @@ namespace ecom_product.nUnitTests
 {
     public class Tests
     {
+        //initializing Product class variables
         private Product _productid { get; set; } = null;
         private Product _productname { get; set; } = null;
         private Product _productprice { get; set; } = null;
         private Product _productstock { get; set; } = null;
 
+        //Setting up stock function
         [SetUp]
         public void Setup()
         {
             _productstock = new Product(500);
         }
 
+        //providing testcases and testing functions for main class constructors and methods
         [TestCase('1')]
         [TestCase('5')]
         [TestCase('8')]
