@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Diagnostics;
 using ecom_product;
-
+/// <summary>
+/// Main class where execcution starts
+/// </summary>
 internal class Program
 {
     public static void Main(string[] args)
     {
+        // Enter user details
         Console.Write("Enter the product ID: ");
         var id = Console.ReadLine();
         Console.Write("Enter the product name: ");
@@ -22,11 +25,12 @@ internal class Program
 
         Console.Write("Enter the stock changed value: ");
         var value = Convert.ToInt32(Console.ReadLine());
-
+        //getting chaged stock
         var increasedStock = productStock.StockIncrease(value);
 
         var decreasedStock = productStock.StockDecrease(value);
 
+        //output
         Console.WriteLine($"Product ID : {id}");
         Console.WriteLine($"Product Name : {name}");
         Console.WriteLine($"Product Price : {price}");

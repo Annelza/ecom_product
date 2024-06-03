@@ -8,11 +8,12 @@ namespace ecom_product
 {
     public class Product
     {
+        //fields
         public char productID;
         public string productName;
         public int stock;
         public double price;
-
+        //constructors
         public Product(char productID)
         {
             this.productID = productID;
